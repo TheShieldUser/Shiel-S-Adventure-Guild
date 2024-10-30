@@ -18,7 +18,7 @@ namespace Shiel_S_Adventure_Guild
 
         private void button1_Click(object sender, EventArgs e)
         {
-            User user = new();
+
 
             string username = UsernameTexbox.Text;
 
@@ -40,6 +40,8 @@ namespace Shiel_S_Adventure_Guild
                 MessageBox.Show("Invalid Input!");
 
             }
+            UsernameTexbox.Text = string.Empty;
+            PasswordTextbox.Text = string.Empty;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -56,7 +58,7 @@ namespace Shiel_S_Adventure_Guild
             }
 
 
-            User user = new(Username: RUsernametextbox.Text, Password: rpasswordtextbox.Text,
+            User user = new(Username: RUsernametextbox.Text, Password: rpasswordtextbox.Text);
             users.Add(user);
 
 
@@ -72,6 +74,11 @@ namespace Shiel_S_Adventure_Guild
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsernameTexbox_TextChanged(object sender, EventArgs e)
         {
 
         }

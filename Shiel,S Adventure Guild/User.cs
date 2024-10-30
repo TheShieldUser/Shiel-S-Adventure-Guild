@@ -8,7 +8,7 @@ namespace Shiel_S_Adventure_Guild
 {
     internal class User
     {
-        public User(string Username, string Password, short @class)
+        public User(string Username, string Password)
         {
             this.username = Username;
             this.password = Password;
@@ -20,6 +20,7 @@ namespace Shiel_S_Adventure_Guild
         public Classes Class1 { get; set; }
 
         public string password { get; set; }
+        public string hum { get; set; }
 
 
     }
